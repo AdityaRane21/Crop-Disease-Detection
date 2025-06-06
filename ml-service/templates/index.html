@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defect Detection</title>
+</head>
+<body>
+    <h1>Defect Detection</h1>
+    <h2>Choose an option:</h2>
+    <div>
+        <h3>Upload Image</h3>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Upload and Predict</button>
+        </form>
+    </div>
+    <div>
+        <h3>Live Video Detection</h3>
+        <a href="/video_feed" target="_blank">View Live Video</a>
+    </div>
+</body>
+</html>
